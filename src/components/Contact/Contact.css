@@ -1,0 +1,208 @@
+.contact-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--black);
+}
+
+.contact-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: var(--white);
+}
+
+.contact-section .contact-container {
+  position: relative;
+  min-width: 1400px;
+  min-height: 700px;
+  display: flex;
+  z-index: 100;
+}
+
+.contact-section .contact-container .contact-info {
+  position: absolute;
+  top: 100px;
+  width: 350px;
+  height: calc(100% - 200px);
+  background: var(--black);
+  color: white;
+  z-index: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 20px 20px var(--grey-shadow);
+}
+
+.contact-section .contact-container .contact-info h2 {
+  color: var(--white);
+  text-transform: uppercase;
+  font-family: var(--Montserrat);
+  letter-spacing: 0.1rem;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.contact-section .contact-container .contact-info .info {
+  position: relative;
+  margin: 20px 0;
+}
+
+.contact-section .contact-container .contact-info .info li {
+  position: relative;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+  align-items: flex-start;
+}
+
+.contact-section .contact-container .contact-info .info li:hover {
+  color: var(--primary);
+}
+
+.contact-section .contact-container .contact-info .info li p {
+  line-height: 2rem;
+  font-family: var(--ABZ);
+  font-size: 1rem;
+}
+
+.contact-section .contact-container .contact-info .social-icons {
+  position: relative;
+  display: flex;
+}
+
+.contact-section .contact-container .contact-info .social-icons li {
+  list-style: none;
+  margin-right: 25px;
+}
+
+.contact-section .contact-container .contact-info .social-icons li a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1.75rem;
+}
+
+.contact-section .contact-container .contact-info .social-icons li a:hover {
+  color: var(--primary);
+}
+
+.contact-section .contact-container .contact-form {
+  position: absolute;
+  padding: 70px 50px;
+  background: var(--white);
+  margin-left: 150px;
+  padding-left: 250px;
+  width: calc(100% - 150px);
+  height: 100%;
+  border-radius: 0.75rem;
+  box-shadow: 2px 2px 20px var(--grey-bg);
+}
+
+.contact-section .contact-container .contact-form h2 {
+  font-family: var(--Montserrat);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: var(--primary);
+}
+
+.contact-section .contact-container .contact-form .form-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+}
+
+.contact-section .contact-container .contact-form .input-box {
+  position: relative;
+  margin: 0 0 2rem 0;
+  font-family: var(--ABZ);
+}
+
+.contact-section .contact-container .contact-form .input-box.w50 {
+  width: 47%;
+}
+
+.contact-section .contact-container .contact-form .input-box.w100 {
+  width: 100%;
+}
+
+.contact-section .contact-container .contact-form .input-box input,
+.contact-section .contact-container .contact-form .input-box textarea {
+  width: 100%;
+  padding: 5px 0;
+  margin: 1rem 0;
+  resize: none;
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: var(--grey-txt);
+  border: none;
+  border-bottom: 2px solid var(--grey-shadow);
+  outline: none;
+  font-family: var(--ABZ);
+}
+
+.contact-section .contact-container .contact-form .input-box textarea {
+  min-height: 7.5rem;
+}
+
+.contact-section .contact-container .contact-form .input-box span {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  padding: 5px 0;
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: var(--grey-txt);
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.contact-section .contact-container .contact-form .input-box input:focus ~ span,
+.contact-section
+  .contact-container
+  .contact-form
+  .input-box
+  textarea:focus
+  ~ span,
+.contact-section .contact-container .contact-form .input-box input:valid ~ span,
+.contact-section
+  .contact-container
+  .contact-form
+  .input-box
+  textarea:valid
+  ~ span {
+  transform: translateY(-1rem);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--primary);
+}
+
+.contact-section
+  .contact-container
+  .contact-form
+  .input-box
+  input[type="submit"] {
+  font-family: var(--Koho) !important;
+  font-weight: bold;
+  margin: 0.25rem 1rem 0.25rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 20px 40px;
+  font-size: 1.1rem;
+  background-color: var(--primary);
+  color: var(--white);
+  border: 2px solid transparent;
+}

@@ -1,0 +1,74 @@
+.projects-section {
+  position: relative;
+  overflow: hidden;
+  z-index: 24;
+  background-color: var(--black);
+  text-align: center;
+  padding: 0 2rem 2rem;
+}
+
+.projects-section .project-items {
+  position: relative;
+  background-color: var(--white);
+  padding: 2rem 1rem;
+  border-radius: 20px;
+}
+
+.projects-section .p-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  height: 500px;
+  margin: 7rem auto;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.projects-section .p-item .p-item-title {
+  font-family: var(--Koho);
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 5px var(--black);
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 30px 40px;
+  color: var(--white);
+  z-index: 2;
+  text-align: left;
+}
+
+.projects-section .p-item .p-item-subtitle {
+  font-family: var(--ABZ);
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-shadow: 2px 2px 5px var(--black);
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 70px 40px;
+  color: var(--white);
+  z-index: 2;
+  text-align: left;
+}
+
+#img-1 {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background: url("../../assets/1.jpg") no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.projects-section .p-item .img-container {
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+}
+
+.projects-section .p-item:hover .img-container {
+  transform: scale(1.1);
+}

@@ -1,0 +1,51 @@
+button {
+  font-family: var(--Koho);
+  font-weight: bold;
+  margin: 0.25rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+button.small {
+  padding: 10px 30px;
+  font-size: 14px;
+}
+
+button.medium {
+  padding: 15px 40px;
+  font-size: 16px;
+}
+
+button.large {
+  padding: 20px 40px;
+  font-size: 18px;
+}
+
+button.outline {
+  background: none;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+button.outline:hover {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+button.filled {
+  background-color: var(--primary);
+  color: var(--white);
+  border: 2px solid transparent;
+}
+
+button.filled:hover {
+  background: none;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+button.curved-border {
+  border-radius: 50px;
+}
